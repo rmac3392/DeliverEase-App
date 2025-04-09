@@ -1,3 +1,7 @@
 import { Routes } from '@angular/router';
-
-export const routes: Routes = [];
+import { DownloadComponent } from './download/download.component';
+import { AppComponent } from './app.component';
+export const routes: Routes = [
+    { path: '', component: AppComponent },
+    { path: 'download', component: DownloadComponent },
+];
