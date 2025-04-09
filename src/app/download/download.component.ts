@@ -10,8 +10,8 @@ import { Component, OnInit } from '@angular/core';
 export class DownloadComponent implements OnInit {
   ngOnInit() {
     const link = document.createElement('a');
-    link.href = '/myapp.apk';  // The file in your assets folder
-    link.download = 'myapp.apk';     // Forces the download
+    link.href = '/app-release.apk';  // The file in your assets folder
+    link.download = 'app-release.apk';     // Forces the download
     document.body.appendChild(link);
     link.click();  // Triggers the download
     document.body.removeChild(link);  
